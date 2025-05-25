@@ -1,0 +1,108 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  padding: 16px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+section .card {
+  margin: 1rem 0;
+  padding: 2rem;
+  display: grid;
+  grid-template: 1rem 1rem auto auto/3rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 1.5rem 1.5rem 3rem hsl(0, 0%, 81%);
+}
+section .card img {
+  grid-column: 1/1;
+  grid-row: 1/span 2;
+  height: auto;
+  width: 2rem;
+  border-radius: 1.25rem;
+}
+section .card .name {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  margin: 0;
+  font-weight: 500;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+section .card .status {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  margin: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+section .card p:nth-child(4) {
+  grid-column: 1/span 2;
+  grid-row: 3/3;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 1em 0;
+}
+section .card p:nth-child(5) {
+  grid-column: 1/span 2;
+  grid-row: 4/4;
+  margin-bottom: 0;
+  font-weight: 500;
+  margin: 0;
+}
+section #card-1 img {
+  border: 2px solid hsl(264, 82%, 80%);
+}
+section #card-4 img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+.card-palete-violet {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+.card-palete-violet p:nth-child(5) {
+  color: hsl(214, 17%, 92%);
+}
+
+.card-palete-gray {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+.card-palete-gray p:nth-child(5) {
+  color: hsl(214, 17%, 92%);
+}
+
+.card-palete-white {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.card-palete-white p:nth-child(5) {
+  color: hsl(224, 10%, 45%);
+}
+
+.card-palete-dark-blue {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+.card-palete-dark-blue p:nth-child(5) {
+  color: hsl(0, 0%, 81%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */
